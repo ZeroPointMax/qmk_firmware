@@ -55,7 +55,7 @@ static KeyPos pos_yellow[4] = {
     {3, 13},
     {5, 3}
 };
-static KeyPos pos_black[32] = {
+static KeyPos pos_black[33] = {
     {0, 5},
     {0, 6},
     {0, 7},
@@ -88,9 +88,9 @@ static KeyPos pos_black[32] = {
     {5, 8},
     {5, 9},
     {5, 10},
-    {5, 13},
+    {5, 13}
 };
-static KeyPos pos_blue[70] = {
+static KeyPos pos_blue[71] = {
     {0, 1},
     {0, 2},
     {0, 3},
