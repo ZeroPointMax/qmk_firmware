@@ -171,7 +171,7 @@ static bool zpm_static_init(effect_params_t* params) {
 
         for (i = 0; i < LEN_YELLOW; i++) {
             rgb_matrix_set_color(
-                g_led_config.matrix_co[pos_yellow[i].row, pos_yellow[i].col],
+                g_led_config.matrix_co[pos_yellow[i].row][pos_yellow[i].col],
                 255,
                 255,
                 0
@@ -181,7 +181,7 @@ static bool zpm_static_init(effect_params_t* params) {
 
         for (i = 0; i < LEN_BLACK; i++) {
             rgb_matrix_set_color(
-                g_led_config.matrix_co[pos_black[i].row, pos_black[i].col],
+                g_led_config.matrix_co[pos_black[i].row][pos_black[i].col],
                 255,
                 255,
                 255
@@ -191,7 +191,7 @@ static bool zpm_static_init(effect_params_t* params) {
 
         for (i = 0; i < LEN_BLUE; i++) {
             rgb_matrix_set_color(
-                g_led_config.matrix_co[pos_blue[i].row, pos_blue[i].col],
+                g_led_config.matrix_co[pos_blue[i].row][pos_blue[i].col],
                 100,
                 100,
                 255
