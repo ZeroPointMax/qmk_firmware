@@ -165,7 +165,7 @@ static KeyPos pos_blue[70] = {
 };
 
 
-static bool zpm_static(effect_params_t* params) {
+static bool zpm_static_init(effect_params_t* params) {
     if (params->init) {
         int i;
 
@@ -199,6 +199,12 @@ static bool zpm_static(effect_params_t* params) {
 
         }
     }
+    return rgb_matrix_check_finished_leds(led_max);
+}
+
+static bool zpm_static(effect_params_t* params) {
+    if (params->init) zpm_static_init(params);
+    //TODO: add key animations here
     return rgb_matrix_check_finished_leds(led_max);
 }
 
